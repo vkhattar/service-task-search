@@ -5,8 +5,8 @@ import os
 
 # Load API keys from environment variables (replace with actual keys if testing locally)
 
-OPENAI_API_KEY = "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"
-PINECONE_API_KEY = "pcsk_2RwDCV_9iPmpUCuQNbfxUh3X46JPwyr5xMEEyAt6LXubq8dHtA6HW6iVzretqXAi5oMRD1"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 INDEX_NAME = "vmrs"
 
 # Initialize OpenAI and Pinecone
